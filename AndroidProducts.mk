@@ -4,4 +4,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_xpeng.mk
+    $(LOCAL_DIR)/infinity_xpeng.mk
+
+COMMON_LUNCH_CHOICES := \
+    infinity_xpeng-user \
+    infinity_xpeng-userdebug \
+    infinity_xpeng-eng
