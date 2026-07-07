@@ -11,10 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from xpeng device
 $(call inherit-product, device/motorola/xpeng/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common InfinityX stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_xpeng
+# Infinity Flags
+INFINITY_MAINTAINER := Shipu
+WITH_GAPPS := true
+
+PRODUCT_NAME := infinity_xpeng
 PRODUCT_DEVICE := xpeng
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
