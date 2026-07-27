@@ -14,6 +14,15 @@ $(call inherit-product, device/motorola/xpeng/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# AxionOS Flags
+AXION_MAINTAINER := Shipu
+AXION_PROCESSOR := Snapdragon_888+
+TARGET_BOOT_ANIMATION_RES := 1080
+AXION_CAMERA_REAR_INFO := 108,13,2
+AXION_CAMERA_FRONT_INFO := 16
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_AXFX := true
+
 PRODUCT_NAME := lineage_xpeng
 PRODUCT_DEVICE := xpeng
 PRODUCT_MANUFACTURER := motorola
